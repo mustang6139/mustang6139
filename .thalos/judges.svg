@@ -1,0 +1,16 @@
+<!-- aeacus keeps: sis -->
+<svg width="817" height="22" viewBox="0 0 817 22" xmlns="http://www.w3.org/2000/svg" font-family="'Cascadia Code','SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="11">
+<style>
+@keyframes plain  { 0%,78% {opacity:1} 80%,90% {opacity:0} 92%,100% {opacity:1} }
+@keyframes secret { 0%,78% {opacity:0} 80%,90% {opacity:1} 92%,100% {opacity:0} }
+.p0 { animation: plain 30s 0.0s infinite; }
+.s0 { opacity:0; animation: secret 30s 0.0s infinite; }
+.p1 { animation: plain 30s 0.7s infinite; }
+.s1 { opacity:0; animation: secret 30s 0.7s infinite; }
+.p2 { animation: plain 30s 1.4s infinite; }
+.s2 { opacity:0; animation: secret 30s 1.4s infinite; }
+</style>
+<g transform="translate(0.0,0)"><rect x="0" y="0" width="227.4" height="22" fill="#1a1b26" stroke="#222533"/><rect x="0" y="0" width="57.6" height="22" fill="#131620"/><line x1="57.6" y1="0" x2="57.6" y2="22" stroke="#222533"/><text x="28.8" y="15" text-anchor="middle" fill="#4a5169">target</text><text class="p0" x="142.5" y="15" text-anchor="middle" fill="#6b7390">minos_exec-thalos_v4</text><text class="s0" x="142.5" y="15" text-anchor="middle" fill="#7dcfff">origin: it will not say</text></g>
+<g transform="translate(235.4,0)"><rect x="0" y="0" width="273.6" height="22" fill="#1a1b26" stroke="#222533"/><rect x="0" y="0" width="44.4" height="22" fill="#131620"/><line x1="44.4" y1="0" x2="44.4" y2="22" stroke="#222533"/><text x="22.2" y="15" text-anchor="middle" fill="#4a5169">eval</text><text class="p1" x="159.0" y="15" text-anchor="middle" fill="#6b7390">rhadamanthys_strict-0x04</text><text class="s1" x="159.0" y="15" text-anchor="middle" fill="#7dcfff">three walls, one word, our order</text></g>
+<g transform="translate(517.0,0)"><rect x="0" y="0" width="300.0" height="22" fill="#1a1b26" stroke="#222533"/><rect x="0" y="0" width="37.8" height="22" fill="#131620"/><line x1="37.8" y1="0" x2="37.8" y2="22" stroke="#222533"/><text x="18.9" y="15" text-anchor="middle" fill="#4a5169">vec</text><text class="p2" x="168.9" y="15" text-anchor="middle" fill="#6b7390">aeacus_bypass-unlocked</text><text class="s2" x="168.9" y="15" text-anchor="middle" fill="#7dcfff">the door is a dot. it wears our name.</text></g>
+</svg>
