@@ -15,21 +15,13 @@
 [![stars](https://img.shields.io/github/stars/mustang6139/sdrtop?style=flat-square&labelColor=16161e&color=1f2335&logo=github&logoColor=bb9af7)](https://github.com/mustang6139/sdrtop/stargazers)
 [![updated](https://img.shields.io/github/last-commit/mustang6139/sdrtop?style=flat-square&labelColor=16161e&color=1f2335&label=updated)](https://github.com/mustang6139/sdrtop/commits)
 
-[**sdrtop**](https://github.com/mustang6139/sdrtop) is a terminal app for software defined radio. You plug in an SDR dongle, tune it somewhere, and it shows you what is actually on the air: a live spectrum, a scrolling waterfall, signal measurements, and for FM broadcast the station name and track title your car radio would display. Keyboard only, and light enough that a Raspberry Pi does not complain about it.
+[**sdrtop**](https://github.com/mustang6139/sdrtop) is a terminal app for software defined radio. Plug in a dongle, tune it, and it shows you what is actually on the air: a live spectrum, a waterfall, signal measurements, and for FM broadcast the station name and track title your car radio would show. Keyboard only, light enough that a Raspberry Pi does not complain about it, and built because the cyberdeck crowd never really got a proper terminal-native option.
 
-Part of why it exists is that the cyberdeck crowd never really got a good option. SDR software tends to come in two shapes: large desktop applications that want a mouse, a wide screen and a decent GPU, or terminal tools that print a few numbers and stop there. Neither is much help when the whole rig fits in a lunchbox and you are sitting on a hillside with it. So sdrtop is built for that case, and presets and themes both live in a TOML file you can rearrange, because a field setup should still look like something you chose rather than something you settled for.
+The other reason is that I wanted to understand radio properly instead of just using it, so `signal/` does not call a DSP library. The FFT engine, the FM demodulator and the RDS decoder are all written out by hand, which took longer and taught me a lot more.
 
-The other half of the reason is selfish. I wanted to understand radio properly instead of just using it, and the surest way to understand something is to be forced to implement it. So `signal/` does not call a DSP library. The maths is written out by hand, which took considerably longer and taught me considerably more.
-
-What ended up in there:
-
-- an **FFT engine** with exponential smoothing and noise floor tracking, so the spectrum reads as a signal instead of a flickering mess
-- an **FM demodulator** that separates the MPX baseband, detects the stereo pilot, and picks out CTCSS sub-audible tones
-- an **RDS decoder** running off the 57 kHz subcarrier: station name, PI code, programme type and RadioText, with accented characters and enough tolerance to keep going when blocks drop
-
-Around that sits a hardware layer for RTL-SDR and HackRF, and a config file meant to be read by humans.
-
-![sdrtop pointed at its own source tree: a spectrum where each module is a frequency bin, with a marker parked on the signal module](assets/self-scan.svg)
+<div align="center">
+  <img src="assets/self-scan.svg" alt="sdrtop pointed at its own source tree: a spectrum where each module is a frequency bin, with a marker parked on the signal module">
+</div>
 
 It is niche, and I have no illusions about that. It is also, by a wide margin, the most I have ever learned from one repository.
 
@@ -60,7 +52,7 @@ It solved exactly one problem, and that problem was mine. I wrote it down in cas
 
 ---
 
-Systems. Frontend. Embedded. Not a personality trait, three repos that prove it.
+Systems. Frontend. Embedded.
 
 ---
 
