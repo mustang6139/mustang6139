@@ -34,19 +34,15 @@ It is niche, and I have no illusions about that. It is also, by a wide margin, t
 > [!NOTE]
 > **Parked for now.** I can only really hold one project in my head at a time, and at the moment that project is sdrtop. homescape is not abandoned, it is queued. I will come back to it.
 
-**A self-hosted homelab dashboard that ships as one static binary.** Go on the back, Svelte on the front, SQLite underneath. The frontend is embedded into the Go binary at build time, so deploying it means copying a single file onto a machine. Nothing to install next to it, nothing extra to keep patched.
+**A self-hosted homelab dashboard that ships as one static binary.** Go on the back, Svelte on the front, SQLite underneath, all baked into one file you copy onto a machine with nothing else to install or patch.
 
-The part I am happiest with is that the dashboard is yours to assemble. You build it from the web interface: drop in widgets, point them at whatever you are actually running, and the layout is saved as a portable JSON document. Widgets reference your services by handle rather than by URL, so you can hand that document to someone else without handing over your credentials with it. The backend does the polling and pushes updates over SSE, which means the browser never talks to your services directly.
-
-Being Go all the way down keeps it thin, so it sits comfortably on the kind of hardware a homelab actually runs on rather than the kind people photograph.
+The part I am happiest with: you assemble the dashboard yourself from the web interface, and widgets reference your services by handle rather than by URL, so you can hand the layout to someone else without handing over your credentials too. Being Go all the way down keeps it thin enough to sit on the hardware a homelab actually runs, not the kind people photograph.
 
 Around 7 500 lines across the two languages, 87 tests, CI and a Makefile.
 
 ### [diting_droidspaces_kernel](https://github.com/mustang6139/diting_droidspaces_kernel)
 
-**A kernel build toolkit for turning a retired phone into a homelab node.** My old Xiaomi 12T Pro was sitting in a drawer with flagship silicon in it, doing nothing, while I was reading spec sheets for single board computers that were slower than it. That felt like the wrong way round.
-
-So this rebuilds the LineageOS kernel for that device with the pieces Linux containers need: namespaces and cgroups switched on, kernel config patched, KernelSU-Next integrated. What comes out is a phone that runs containers, has its own battery, and draws less power than anything else I own.
+**A kernel build toolkit for turning a retired phone into a homelab node.** My old Xiaomi 12T Pro was sitting in a drawer with flagship silicon in it while I was reading spec sheets for single board computers that were slower than it, which felt like the wrong way round. So this rebuilds its LineageOS kernel with what containers need: namespaces and cgroups on, kernel config patched, KernelSU-Next integrated. What comes out is a phone that runs containers, has its own battery, and draws less power than anything else I own.
 
 It solved exactly one problem, and that problem was mine. I wrote it down in case anyone else has the same drawer.
 
