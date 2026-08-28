@@ -36,9 +36,9 @@ It is niche, and I have no illusions about that. It is also, by a wide margin, t
 
 **A self-hosted homelab dashboard that ships as one static binary.** Go on the back, Svelte on the front, SQLite underneath, all baked into one file you copy onto a machine with nothing else to install or patch.
 
-The part I am happiest with: you assemble the dashboard yourself from the web interface, and widgets reference your services by handle rather than by URL, so you can hand the layout to someone else without handing over your credentials too. Being Go all the way down keeps it thin enough to sit on the hardware a homelab actually runs, not the kind people photograph.
+The part I am happiest with: you assemble the dashboard yourself from the web interface, and widgets reference your services by handle rather than by URL, so you can hand the layout to someone else without handing over your credentials too.
 
-Around 7 500 lines across the two languages, 87 tests, CI and a Makefile.
+Being Go all the way down keeps it thin enough to sit on the hardware a homelab actually runs, not the kind people photograph. Around 7 500 lines across the two languages, 87 tests, CI and a Makefile.
 
 ### [diting_droidspaces_kernel](https://github.com/mustang6139/diting_droidspaces_kernel)
 
