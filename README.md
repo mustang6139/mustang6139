@@ -48,7 +48,10 @@ It solved exactly one problem, and that problem was mine. I wrote it down in cas
 
 ---
 
-Systems. Frontend. Embedded.
+<div align="center">
+  <p>Systems. Frontend. Embedded.</p>
+  <img src="assets/stack-boot.svg" alt="An old BIOS POST screen counting memory to 640K, loading RUST.SYS, GO.SYS, SVELTE.SYS, C.SYS and PYTHON.SYS as device drivers, verifying the DMI pool and starting up as a row of language badges">
+</div>
 
 ---
 

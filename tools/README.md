@@ -9,6 +9,7 @@ and gave up somewhere around the fortieth `<rect>`.
 | `gen_hero.py` | `assets/hero-tui.svg` | the terminal that keeps typing `fastfetch --me` and `fastfetch --machine` at itself |
 | `gen_top.py` | `assets/story-terminal.svg` | `lifetop`, an htop where programming is PID 1 and my hobbies are its children |
 | `gen_scan.py` | `assets/self-scan.svg` | sdrtop measuring its own source tree, in dBc, because why not |
+| `gen_stack.py` | `assets/stack-boot.svg` | an 80 column BIOS POST screen that boots, hands off, and comes up as the stack |
 
 ## Running them
 
