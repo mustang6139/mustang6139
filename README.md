@@ -15,7 +15,7 @@
 [![stars](https://img.shields.io/github/stars/mustang6139/sdrtop?style=flat-square&labelColor=16161e&color=1f2335&logo=github&logoColor=bb9af7)](https://github.com/mustang6139/sdrtop/stargazers)
 [![updated](https://img.shields.io/github/last-commit/mustang6139/sdrtop?style=flat-square&labelColor=16161e&color=1f2335&label=updated)](https://github.com/mustang6139/sdrtop/commits)
 
-[**sdrtop**](https://github.com/mustang6139/sdrtop) is a terminal app for software defined radio. Plug in a dongle, tune it, and it shows you what is actually on the air: a live spectrum, a waterfall, signal measurements, and for FM broadcast the station name and track title your car radio would show. Keyboard only, light enough that a Raspberry Pi does not complain about it, and built because the cyberdeck crowd never really got a proper terminal-native option.
+[**sdrtop**](https://github.com/mustang6139/sdrtop) is a terminal app for software defined radio. Plug in a dongle, tune it, and it shows you what is actually on the air: a live spectrum, a waterfall, signal measurements, and for FM broadcast the station name and track title your car radio would show. Keyboard only, light enough that a Raspberry Pi does not complain about it, and built partly because the cyberdeck crowd never really got a proper terminal-native option.
 
 The other reason is that I wanted to understand radio properly instead of just using it, so `signal/` does not call a DSP library. The FFT engine, the FM demodulator and the RDS decoder are all written out by hand, which took longer and taught me a lot more.
 
@@ -57,7 +57,7 @@ It solved exactly one problem, and that problem was mine. I wrote it down in cas
 
 ## The honest version
 
-And if you are reading this in a professional capacity: yes, I built an animated terminal instead of updating my CV. I would like that noted as a strength.
+If you are reading this in a professional capacity: yes, I built an animated terminal instead of updating my CV. I would like that noted as a strength.
 
 Right now this is not my day job. It is the thing I do after the day job ends, and I would take it full time in a heartbeat. Everything here exists for exactly one reason: I wanted it to exist, so I built it. I do not really believe in picking one lane and defending it for life, so if something looks interesting I will walk straight into it and figure out the rest on the way. Rust is where I spend most of my time right now, and it is usually the least interesting part of the decision.
 
